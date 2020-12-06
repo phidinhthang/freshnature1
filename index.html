@@ -1,0 +1,904 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Fresh Nature</title>
+	<!-- <link rel="stylesheet" href="./assets/fontawesome.css"> -->
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="./assets/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" />
+	<link rel="shortcut icon" type="image/png" href="./assets/image/favicon.png"/>
+
+	<link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+	<nav>
+		<div class="navtop">
+			<div class="container">
+				<div class="row">
+					<div class="col-6">
+						<p class="navtop-logo">Fresh Nature</p>
+					</div>
+					<div class="col-6 navtop-login d-flex justify-content-end">
+						<a class="signin">
+							<span class="fa fa-sign-in mr-1"></span>Đăng nhập
+						</a>
+						<span class="split mx-2"></span>
+						<a class="signup">
+							<span class="fa fa-user-plus mr-1"></span>Đăng kí
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="nav-header ">
+			<div class="container d-flex justify-content-between align-items-center h-75">
+				<div class="nav-logo">
+					<img src="./assets/image/brand.png" alt="">
+				</div>
+				<div class="nav-search d-flex">
+					<input type="search"  id="search" placeholder="Tìm kiếm">
+					<div class="wrapper-search">
+						<img  src="./assets/image/search.png" alt="" >
+					</div>
+				</div>
+				<div class="nav-contact d-flex align-items-center">
+					<i class="fa fa-phone"></i>
+					<span class="split mx-3"></span>
+					<div class="nav-contact-phone">
+						<p>Hotline 24/7</p>
+						<p>0123456789</p>
+					</div>
+				</div>
+				<div class="nav-cart">
+					<p class="nav-cart-amount"> 0</p>
+					<span class="fa fa-shopping-bag text-white"></span>
+					<div class="nav-cart-inner">
+						<ul class="nav-cart-product">
+							<li class="nav-cart-product-item">
+								<img src="./assets/image/product-1.jpg" alt="" class="nav-cart-img">
+								<div class="nav-cart-product-detail">
+									<p class="product-title">Cà tím dài VinEco</p>
+									<p class="product-cost">4,200đ</p>
+									<p class="product-amount">x1</p>
+								</div>
+								<span class="delete-product fa fa-remove"></span>
+							</li>
+						</ul>
+						<div class="update-price">
+							<p class="price-total">Thành tiền:<span>4200đ</span></p>
+
+						</div>
+						<div class="product-link">
+							<a href="#" class="go-to-cart">Giỏ hàng</a>
+							<a href="#" class="payment">Thanh toán</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="menu" id="menu">
+		<div class="container">
+			<ul class="nav justify-content-between">
+				<li class="nav-item"><a class="nav-link" href="#">Trang chủ</a></li>
+				<li class="nav-item"><a class="nav-link" href="#">Giơi thiệu</a></li>
+				<li class="nav-item"><a class="nav-link" href="#">Sản phẩm</a></li>
+				<li class="nav-item"><a class="nav-link" href="#">Tin tức</a></li>
+				<li class="nav-item"><a class="nav-link" href="#">Mẹo hay</a></li>
+				<li class="nav-item"><a class="nav-link" href="#">Liên hệ</a></li>
+			</ul>
+		</div>
+	</div>
+</nav>
+<section class="feature">
+	<img src="./assets/image/slider-1.jpg" alt="">
+</section>
+<div class="container my-5">
+	<div class="slide-controller d-flex justify-content-between mb-3 ">
+		<div class="slide-title ">Hàng mới về</div>
+		<div class="slide-group-button d-flex justify-content-between">
+			<button class="slide-button button-active" data-filter="raucu">Rau, củ sạch</button>
+			<button class="slide-button" data-filter="traicay">Trái cây tươi</button>
+			<button class="slide-button" data-filter="douong">Đồ uống</button>
+		</div>
+	</div>
+	<div class="owl-carousel owl-theme  show" id="raucu">
+		<div class="item">
+			<div class="product-item">
+				<div class="image-container">
+					<img class="product-image" src="./assets/image/product-1.jpg" alt="">
+					<div class="product-overlay">
+						<span class="fa fa-shopping-bag" data-toggle="tooltip" title="Mua ngay" data-placement="top"></span>
+						<span class="fa fa-eye" data-toggle="tooltip" data-placement="top" title="Xem"></span>
+					</div>
+				</div>
+				<span class="product-name">Mướp khía sạch VinEco</span>
+				<span class="product-price">4,900đ</span>
+			</div>
+		</div>
+		<div class="item">
+			<div class="product-item">
+				<div class="image-container">
+					<img class="product-image" src="./assets/image/product-2.jpg" alt="">
+					<div class="product-overlay">
+						<span class="fa fa-shopping-bag" data-toggle="tooltip" title="Mua ngay" data-placement="top"></span>
+						<span class="fa fa-eye" data-toggle="tooltip" data-placement="top" title="Xem"></span>
+					</div>
+				</div>
+				<span class="product-name">Bí ngô củ lạc (bí đỏ hạt đậu) VinEco</span>
+				<span class="product-price">5,700đ</span>
+			</div>
+		</div>
+		<div class="item">
+			<div class="product-item">
+				<div class="image-container">
+					<img class="product-image" src="./assets/image/product-3.jpg" alt="">
+					<div class="product-overlay">
+						<span class="fa fa-shopping-bag" data-toggle="tooltip" title="Mua ngay" data-placement="top"></span>
+						<span class="fa fa-eye" data-toggle="tooltip" data-placement="top" title="Xem"></span>
+					</div>
+				</div>
+				<span class="product-name">Cà tím dài VinEco</span>
+				<span class="product-price">4,200đ</span>
+			</div>
+		</div>
+		<div class="item">
+			<div class="product-item">
+				<div class="image-container">
+					<img class="product-image" src="./assets/image/product-4.jpg" alt="">
+					<div class="product-overlay">
+						<span class="fa fa-shopping-bag" data-toggle="tooltip" title="Mua ngay" data-placement="top"></span>
+						<span class="fa fa-eye" data-toggle="tooltip" data-placement="top" title="Xem"></span>
+					</div>
+				</div>
+				<span class="product-name">Rau dền đỏ sạch VinEco</span>
+				<span class="product-price">13,300đ</span>
+			</div>
+		</div>
+		<div class="item">
+			<div class="product-item">
+				<div class="image-container">
+					<img class="product-image" src="./assets/image/product-5.jpg" alt="">
+					<div class="product-overlay">
+						<span class="fa fa-shopping-bag" data-toggle="tooltip" title="Mua ngay" data-placement="top"></span>
+						<span class="fa fa-eye" data-toggle="tooltip" data-placement="top" title="Xem"></span>
+					</div>
+				</div>
+				<span class="product-name">Rau húng quế VinEco</span>
+				<span class="product-price">3,800đ</span>
+			</div>
+		</div>
+		<div class="item">
+			<div class="product-item">
+				<div class="image-container">
+					<img class="product-image" src="./assets/image/product-6.jpg" alt="">
+					<div class="product-overlay">
+						<span class="fa fa-shopping-bag" data-toggle="tooltip" title="Mua ngay" data-placement="top"></span>
+						<span class="fa fa-eye" data-toggle="tooltip" data-placement="top" title="Xem"></span>
+					</div>
+				</div>
+				<span class="product-name">Bắp cải tím Đà Lạt PF</span>
+				<span class="product-price">15,600đ</span>
+			</div>
+		</div>
+		<div class="item">
+			<div class="product-item">
+				<div class="image-container">
+					<img class="product-image" src="./assets/image/product-7.jpg" alt="">
+					<div class="product-overlay">
+						<span class="fa fa-shopping-bag" data-toggle="tooltip" title="Mua ngay" data-placement="top"></span>
+						<span class="fa fa-eye" data-toggle="tooltip" data-placement="top" title="Xem"></span>
+					</div>
+				</div>
+				<span class="product-name">Khoai lang Nhật Đà Lạt PF</span>
+				<span class="product-price">12,000đ</span>
+			</div>
+		</div>
+		<div class="item">
+			<div class="product-item">
+				<div class="image-container">
+					<img class="product-image" src="./assets/image/product-8.jpg" alt="">
+					<div class="product-overlay">
+						<span class="fa fa-shopping-bag" data-toggle="tooltip" title="Mua ngay" data-placement="top"></span>
+						<span class="fa fa-eye" data-toggle="tooltip" data-placement="top" title="Xem"></span>
+					</div>
+				</div>
+				<span class="product-name">Súp lơ trắng</span>
+				<span class="product-price">20,000đ</span>
+			</div>
+		</div>
+
+	</div>
+	<div class="owl-carousel owl-theme d-none" id="traicay">
+		<div class="item">
+			<div class="product-item">
+				<div class="image-container">
+					<img class="product-image" src="./assets/image/product-9.jpg" alt="">
+					<div class="product-overlay">
+						<span class="fa fa-shopping-bag" data-toggle="tooltip" title="Mua ngay" data-placement="top"></span>
+						<span class="fa fa-eye" data-toggle="tooltip" data-placement="top" title="Xem"></span>
+					</div>
+				</div>
+				<span class="product-name">Trái sơ ri</span>
+				<span class="product-price">18,900đ</span>
+			</div>
+		</div>
+		<div class="item">
+			<div class="product-item">
+				<div class="image-container">
+					<img class="product-image" src="./assets/image/product-11.jpg" alt="">
+					<div class="product-overlay">
+						<span class="fa fa-shopping-bag" data-toggle="tooltip" title="Mua ngay" data-placement="top"></span>
+						<span class="fa fa-eye" data-toggle="tooltip" data-placement="top" title="Xem"></span>
+					</div>
+				</div>
+				<span class="product-name">Táo Gala size 100 - 125(XX Mỹ)</span>
+				<span class="product-price">35,400đ</span>
+			</div>
+		</div>
+		<div class="item">
+			<div class="product-item">
+				<div class="image-container">
+					<img class="product-image" src="./assets/image/product-12.jpg" alt="">
+					<div class="product-overlay">
+						<span class="fa fa-shopping-bag" data-toggle="tooltip" title="Mua ngay" data-placement="top"></span>
+						<span class="fa fa-eye" data-toggle="tooltip" data-placement="top" title="Xem"></span>
+					</div>
+				</div>
+				<span class="product-name">Táo xanh Mỹ cao cấp</span>
+				<span class="product-price">160,000đ</span>
+			</div>
+		</div>
+		<div class="item">
+			<div class="product-item">
+				<div class="image-container">
+					<img class="product-image" src="./assets/image/product-13.jpg" alt="">
+					<div class="product-overlay">
+						<span class="fa fa-shopping-bag" data-toggle="tooltip" title="Mua ngay" data-placement="top"></span>
+						<span class="fa fa-eye" data-toggle="tooltip" data-placement="top" title="Xem"></span>
+					</div>
+				</div>
+				<span class="product-name">Dâu tây Đà Lạt</span>
+				<span class="product-price">350,000đ</span>
+			</div>
+		</div>
+		<div class="item">
+			<div class="product-item">
+				<div class="image-container">
+					<img class="product-image" src="./assets/image/product-14.jpg" alt="">
+					<div class="product-overlay">
+						<span class="fa fa-shopping-bag" data-toggle="tooltip" title="Mua ngay" data-placement="top"></span>
+						<span class="fa fa-eye" data-toggle="tooltip" data-placement="top" title="Xem"></span>
+					</div>
+				</div>
+				<span class="product-name">Lê xanh Mỹ</span>
+				<span class="product-price">230,000đ</span>
+			</div>
+		</div>
+		<div class="item">
+			<div class="product-item">
+				<div class="image-container">
+					<img class="product-image" src="./assets/image/product-15.jpg" alt="">
+					<div class="product-overlay">
+						<span class="fa fa-shopping-bag" data-toggle="tooltip" title="Mua ngay" data-placement="top"></span>
+						<span class="fa fa-eye" data-toggle="tooltip" data-placement="top" title="Xem"></span>
+					</div>
+				</div>
+				<span class="product-name">Hạt điều trắng</span>
+				<span class="product-price">380,000đ</span>
+			</div>
+		</div>
+		<div class="item">
+			<div class="product-item">
+				<div class="image-container">
+					<img class="product-image" src="./assets/image/product-16.jpg" alt="">
+					<div class="product-overlay">
+						<span class="fa fa-shopping-bag" data-toggle="tooltip" title="Mua ngay" data-placement="top"></span>
+						<span class="fa fa-eye" data-toggle="tooltip" data-placement="top" title="Xem"></span>
+					</div>
+				</div>
+				<span class="product-name">Chanh tươi</span>
+				<span class="product-price">30,000đ</span>
+			</div>
+		</div>
+
+	</div>
+	<div class="owl-carousel owl-theme d-none" id="douong">
+		<div class="item">
+			<div class="product-item">
+				<div class="image-container">
+					<img class="product-image" src="./assets/image/product-17.jpg" alt="">
+					<div class="product-overlay">
+						<span class="fa fa-shopping-bag" data-toggle="tooltip" title="Mua ngay" data-placement="top"></span>
+						<span class="fa fa-eye" data-toggle="tooltip" data-placement="top" title="Xem"></span>
+					</div>
+				</div>
+				<span class="product-name">Sữa đậu nành Gấp đôi Canxi không đường</span>
+				<span class="product-price">20,000đ</span>
+			</div>
+		</div>
+		<div class="item">
+			<div class="product-item">
+				<div class="image-container">
+					<img class="product-image" src="./assets/image/product-18.jpg" alt="">
+					<div class="product-overlay">
+						<span class="fa fa-shopping-bag" data-toggle="tooltip" title="Mua ngay" data-placement="top"></span>
+						<span class="fa fa-eye" data-toggle="tooltip" data-placement="top" title="Xem"></span>
+					</div>
+				</div>
+				<span class="product-name">Sữa chua ăn Probeauty vị việt quất- 4 hộp 100g</span>
+				<span class="product-price">35,000đ</span>
+			</div>
+		</div>
+		<div class="item">
+			<div class="product-item">
+				<div class="image-container">
+					<img class="product-image" src="./assets/image/product-19.jpg" alt="">
+					<div class="product-overlay">
+						<span class="fa fa-shopping-bag" data-toggle="tooltip" title="Mua ngay" data-placement="top"></span>
+						<span class="fa fa-eye" data-toggle="tooltip" data-placement="top" title="Xem"></span>
+					</div>
+				</div>
+				<span class="product-name">Sữa chua ăn ít đường từ sữa tươi Organic - Vỉ 4 hộp x 100g</span>
+				<span class="product-price">39,900đ</span>
+			</div>
+		</div>
+		<div class="item">
+			<div class="product-item">
+				<div class="image-container">
+					<img class="product-image" src="./assets/image/product-20.jpg" alt="">
+					<div class="product-overlay">
+						<span class="fa fa-shopping-bag" data-toggle="tooltip" title="Mua ngay" data-placement="top"></span>
+						<span class="fa fa-eye" data-toggle="tooltip" data-placement="top" title="Xem"></span>
+					</div>
+				</div>
+				<span class="product-name">Sữa đặc Ông Thọ đỏ- Hộp Giấy 380g</span>
+				<span class="product-price">20,000đ</span>
+			</div>
+		</div>
+		<div class="item">
+			<div class="product-item">
+				<div class="image-container">
+					<img class="product-image" src="./assets/image/product-21.jpg" alt="">
+					<div class="product-overlay">
+						<span class="fa fa-shopping-bag" data-toggle="tooltip" title="Mua ngay" data-placement="top"></span>
+						<span class="fa fa-eye" data-toggle="tooltip" data-placement="top" title="Xem"></span>
+					</div>
+				</div>
+				<span class="product-name">Sữa đặc Ngôi Sao Phương Nam xanh lá - Hộp giấy 380g</span>
+				<span class="product-price">18,000đ</span>
+			</div>
+		</div>
+		<div class="item">
+			<div class="product-item">
+				<div class="image-container">
+					<img class="product-image" src="./assets/image/product-22.jpg" alt="">
+					<div class="product-overlay">
+						<span class="fa fa-shopping-bag" data-toggle="tooltip" title="Mua ngay" data-placement="top"></span>
+						<span class="fa fa-eye" data-toggle="tooltip" data-placement="top" title="Xem"></span>
+					</div>
+				</div>
+				<span class="product-name">Sữa bột Dielac Alpha Gold IQ Step 4 - Hộp 400g</span>
+				<span class="product-price">105,000đ</span>
+			</div>
+		</div>
+		<div class="item">
+			<div class="product-item">
+				<div class="image-container">
+					<img class="product-image" src="./assets/image/product-23.jpg" alt="">
+					<div class="product-overlay">
+						<span class="fa fa-shopping-bag" data-toggle="tooltip" title="Mua ngay" data-placement="top"></span>
+						<span class="fa fa-eye" data-toggle="tooltip" data-placement="top" title="Xem"></span>
+					</div>
+				</div>
+				<span class="product-name">Sữa bột Dielac Alpha Gold IQ Step 4 - 900g</span>
+				<span class="product-price">356,000đ</span>
+			</div>
+		</div>
+		<div class="item">
+			<div class="product-item">
+				<div class="image-container">
+					<img class="product-image" src="./assets/image/product-24.jpg" alt="">
+					<div class="product-overlay">
+						<span class="fa fa-shopping-bag" data-toggle="tooltip" title="Mua ngay" data-placement="top"></span>
+						<span class="fa fa-eye" data-toggle="tooltip" data-placement="top" title="Xem"></span>
+					</div>
+				</div>
+				<span class="product-name">Nước dừa xiêm hương vị sen Cocoxim hộp 330ml</span>
+				<span class="product-price">13,500đ</span>
+			</div>
+		</div>
+	</div>
+</div>
+<section class="container">
+	<div class="row">
+		<div class="col-md-6">
+			<div class="banner-1 ">
+				<span class="banner-title">Thực phẩm sạch</span>
+				<p class="banner-content">Đồ ăn tươi ngon</p>
+				<p class="banner-content">Mỗi ngày</p>
+				<button class="view-more">Xem thêm</button>
+			</div>
+		</div>
+		<div class="col-md-6">
+			<div class="banner-2 ">
+				<span class="banner-title">Thực phẩm tươi</span>
+				<p class="banner-content">Giao nhanh</p>
+				<p class="banner-content">Chớp mắt</p>
+				<button class="view-more">Xem thêm</button>
+			</div>
+		</div>
+	</div>
+</section>
+<div class="container my-5">
+	<div class="slide-controller d-flex justify-content-between mb-3 ">
+		<div class="slide-title ">Trái cây nhập khẩu</div>
+		<div class="slide-group-button d-flex justify-content-between">
+			<button class="slide-button button-active" data-filter="hoaquanhapkhau">Hoa quả nhập khẩu</button>
+			<button class="slide-button" data-filter="traicaytuoi">Trái cây tươi</button>
+		</div>
+	</div>
+	<div class="owl-carousel owl-theme  show" id="hoaquanhapkhau">
+		<div class="item">
+			<div class="product-item">
+				<div class="image-container">
+					<img class="product-image" src="./assets/image/product-9.jpg" alt="">
+					<div class="product-overlay">
+						<span class="fa fa-shopping-bag" data-toggle="tooltip" title="Mua ngay" data-placement="top"></span>
+						<span class="fa fa-eye" data-toggle="tooltip" data-placement="top" title="Xem"></span>
+					</div>
+				</div>
+				<span class="product-name">Trái sơ ri</span>
+				<span class="product-price">18,900đ</span>
+			</div>
+		</div>
+		<div class="item">
+			<div class="product-item">
+				<div class="image-container">
+					<img class="product-image" src="./assets/image/product-27.jpg" alt="">
+					<div class="product-overlay">
+						<span class="fa fa-shopping-bag" data-toggle="tooltip" title="Mua ngay" data-placement="top"></span>
+						<span class="fa fa-eye" data-toggle="tooltip" data-placement="top" title="Xem"></span>
+					</div>
+				</div>
+				<span class="product-name">Nho mĩ nhập khẩu</span>
+				<span class="product-price">235,000đ</span>
+			</div>
+		</div>
+		<div class="item">
+			<div class="product-item">
+				<div class="image-container">
+					<img class="product-image" src="./assets/image/product-11.jpg" alt="">
+					<div class="product-overlay">
+						<span class="fa fa-shopping-bag" data-toggle="tooltip" title="Mua ngay" data-placement="top"></span>
+						<span class="fa fa-eye" data-toggle="tooltip" data-placement="top" title="Xem"></span>
+					</div>
+				</div>
+				<span class="product-name">Táo Gala size 100 - 125 (XX Mỹ)</span>
+				<span class="product-price">35,400đ</span>
+			</div>
+		</div>
+		<div class="item">
+			<div class="product-item">
+				<div class="image-container">
+					<img class="product-image" src="./assets/image/product-12.jpg" alt="">
+					<div class="product-overlay">
+						<span class="fa fa-shopping-bag" data-toggle="tooltip" title="Mua ngay" data-placement="top"></span>
+						<span class="fa fa-eye" data-toggle="tooltip" data-placement="top" title="Xem"></span>
+					</div>
+				</div>
+				<span class="product-name">Táo xanh Mỹ cao cấp</span>
+				<span class="product-price">160,000đ</span>
+			</div>
+		</div>
+		<div class="item">
+			<div class="product-item">
+				<div class="image-container">
+					<img class="product-image" src="./assets/image/product-29.jpg" alt="">
+					<div class="product-overlay">
+						<span class="fa fa-shopping-bag" data-toggle="tooltip" title="Mua ngay" data-placement="top"></span>
+						<span class="fa fa-eye" data-toggle="tooltip" data-placement="top" title="Xem"></span>
+					</div>
+				</div>
+				<span class="product-name">Lê xanh Mỹ</span>
+				<span class="product-price">230,000đ</span>
+			</div>
+		</div>
+		<div class="item">
+			<div class="product-item">
+				<div class="image-container">
+					<img class="product-image" src="./assets/image/product-28.jpg" alt="">
+					<div class="product-overlay">
+						<span class="fa fa-shopping-bag" data-toggle="tooltip" title="Mua ngay" data-placement="top"></span>
+						<span class="fa fa-eye" data-toggle="tooltip" data-placement="top" title="Xem"></span>
+					</div>
+				</div>
+				<span class="product-name">Quả óc chó</span>
+				<span class="product-price">430,000đ</span>
+			</div>
+		</div>
+		<div class="item">
+			<div class="product-item">
+				<div class="image-container">
+					<img class="product-image" src="./assets/image/product-15.jpg" alt="">
+					<div class="product-overlay">
+						<span class="fa fa-shopping-bag" data-toggle="tooltip" title="Mua ngay" data-placement="top"></span>
+						<span class="fa fa-eye" data-toggle="tooltip" data-placement="top" title="Xem"></span>
+					</div>
+				</div>
+				<span class="product-name">Hạt điều khô</span>
+				<span class="product-price">280,000đ</span>
+			</div>
+		</div>
+		<div class="item">
+			<div class="product-item">
+				<div class="image-container">
+					<img class="product-image" src="./assets/image/product-30.jpg" alt="">
+					<div class="product-overlay">
+						<span class="fa fa-shopping-bag" data-toggle="tooltip" title="Mua ngay" data-placement="top"></span>
+						<span class="fa fa-eye" data-toggle="tooltip" data-placement="top" title="Xem"></span>
+					</div>
+				</div>
+				<span class="product-name">Hạt hạch nhân</span>
+				<span class="product-price">320,000đ</span>
+			</div>
+		</div>
+	</div>
+	<div class="owl-carousel owl-theme d-none" id="traicaytuoi">
+		<div class="item">
+			<div class="product-item">
+				<div class="image-container">
+					<img class="product-image" src="./assets/image/product-9.jpg" alt="">
+					<div class="product-overlay">
+						<span class="fa fa-shopping-bag" data-toggle="tooltip" title="Mua ngay" data-placement="top"></span>
+						<span class="fa fa-eye" data-toggle="tooltip" data-placement="top" title="Xem"></span>
+					</div>
+				</div>
+				<span class="product-name">Trái sơ ri</span>
+				<span class="product-price">18,900đ</span>
+			</div>
+		</div>
+		<div class="item">
+			<div class="product-item">
+				<div class="image-container">
+					<img class="product-image" src="./assets/image/product-11.jpg" alt="">
+					<div class="product-overlay">
+						<span class="fa fa-shopping-bag" data-toggle="tooltip" title="Mua ngay" data-placement="top"></span>
+						<span class="fa fa-eye" data-toggle="tooltip" data-placement="top" title="Xem"></span>
+					</div>
+				</div>
+				<span class="product-name">Táo Gala size 100 - 125 (XX Mỹ)</span>
+				<span class="product-price">35,400đ</span>
+			</div>
+		</div>
+		<div class="item">
+			<div class="product-item">
+				<div class="image-container">
+					<img class="product-image" src="./assets/image/product-12.jpg" alt="">
+					<div class="product-overlay">
+						<span class="fa fa-shopping-bag" data-toggle="tooltip" title="Mua ngay" data-placement="top"></span>
+						<span class="fa fa-eye" data-toggle="tooltip" data-placement="top" title="Xem"></span>
+					</div>
+				</div>
+				<span class="product-name">Táo xanh Mỹ cao cấp</span>
+				<span class="product-price">160,000đ</span>
+			</div>
+		</div>
+		<div class="item">
+			<div class="product-item">
+				<div class="image-container">
+					<img class="product-image" src="./assets/image/product-13.jpg" alt="">
+					<div class="product-overlay">
+						<span class="fa fa-shopping-bag" data-toggle="tooltip" title="Mua ngay" data-placement="top"></span>
+						<span class="fa fa-eye" data-toggle="tooltip" data-placement="top" title="Xem"></span>
+					</div>
+				</div>
+				<span class="product-name">Dâu tây Đà Lạt</span>
+				<span class="product-price">350,000đ</span>
+			</div>
+		</div>
+		<div class="item">
+			<div class="product-item">
+				<div class="image-container">
+					<img class="product-image" src="./assets/image/product-14.jpg" alt="">
+					<div class="product-overlay">
+						<span class="fa fa-shopping-bag" data-toggle="tooltip" title="Mua ngay" data-placement="top"></span>
+						<span class="fa fa-eye" data-toggle="tooltip" data-placement="top" title="Xem"></span>
+					</div>
+				</div>
+				<span class="product-name">Lê xanh Mỹ</span>
+				<span class="product-price">230,000đ</span>
+			</div>
+		</div>
+		<div class="item">
+			<div class="product-item">
+				<div class="image-container">
+					<img class="product-image" src="./assets/image/product-15.jpg" alt="">
+					<div class="product-overlay">
+						<span class="fa fa-shopping-bag" data-toggle="tooltip" title="Mua ngay" data-placement="top"></span>
+						<span class="fa fa-eye" data-toggle="tooltip" data-placement="top" title="Xem"></span>
+					</div>
+				</div>
+				<span class="product-name">Hạt điều trắng</span>
+				<span class="product-price">380,000đ</span>
+			</div>
+		</div>
+		<div class="item">
+			<div class="product-item">
+				<div class="image-container">
+					<img class="product-image" src="./assets/image/product-16.jpg" alt="">
+					<div class="product-overlay">
+						<span class="fa fa-shopping-bag" data-toggle="tooltip" title="Mua ngay" data-placement="top"></span>
+						<span class="fa fa-eye" data-toggle="tooltip" data-placement="top" title="Xem"></span>
+					</div>
+				</div>
+				<span class="product-name">Chanh tươi</span>
+				<span class="product-price">30,000đ</span>
+			</div>
+		</div>
+
+	</div>
+</div>
+
+<div class="container my-5">
+	<div class="slide-controller d-flex justify-content-between mb-3 ">
+		<div class="slide-title ">Hàng mới về</div>
+		<div class="slide-group-button d-flex justify-content-between">
+			<button class="slide-button button-active" data-filter="douong1">Đồ uống</button>
+		</div>
+	</div>
+	<div class="owl-carousel owl-theme " id="douong1">
+		<div class="item">
+			<div class="product-item">
+				<div class="image-container">
+					<img class="product-image" src="./assets/image/product-17.jpg" alt="">
+					<div class="product-overlay">
+						<span class="fa fa-shopping-bag" data-toggle="tooltip" title="Mua ngay" data-placement="top"></span>
+						<span class="fa fa-eye" data-toggle="tooltip" data-placement="top" title="Xem"></span>
+					</div>
+				</div>
+				<span class="product-name">Sữa đậu nành Gấp đôi Canxi không đường</span>
+				<span class="product-price">20,000đ</span>
+			</div>
+		</div>
+		<div class="item">
+			<div class="product-item">
+				<div class="image-container">
+					<img class="product-image" src="./assets/image/product-18.jpg" alt="">
+					<div class="product-overlay">
+						<span class="fa fa-shopping-bag" data-toggle="tooltip" title="Mua ngay" data-placement="top"></span>
+						<span class="fa fa-eye" data-toggle="tooltip" data-placement="top" title="Xem"></span>
+					</div>
+				</div>
+				<span class="product-name">Sữa chua ăn Probeauty vị việt quất- 4 hộp 100g</span>
+				<span class="product-price">35,000đ</span>
+			</div>
+		</div>
+		<div class="item">
+			<div class="product-item">
+				<div class="image-container">
+					<img class="product-image" src="./assets/image/product-19.jpg" alt="">
+					<div class="product-overlay">
+						<span class="fa fa-shopping-bag" data-toggle="tooltip" title="Mua ngay" data-placement="top"></span>
+						<span class="fa fa-eye" data-toggle="tooltip" data-placement="top" title="Xem"></span>
+					</div>
+				</div>
+				<span class="product-name">Sữa chua ăn ít đường từ sữa tươi Organic - Vỉ 4 hộp x 100g</span>
+				<span class="product-price">39,900đ</span>
+			</div>
+		</div>
+		<div class="item">
+			<div class="product-item">
+				<div class="image-container">
+					<img class="product-image" src="./assets/image/product-20.jpg" alt="">
+					<div class="product-overlay">
+						<span class="fa fa-shopping-bag" data-toggle="tooltip" title="Mua ngay" data-placement="top"></span>
+						<span class="fa fa-eye" data-toggle="tooltip" data-placement="top" title="Xem"></span>
+					</div>
+				</div>
+				<span class="product-name">Sữa đặc Ông Thọ đỏ- Hộp Giấy 380g</span>
+				<span class="product-price">20,000đ</span>
+			</div>
+		</div>
+		<div class="item">
+			<div class="product-item">
+				<div class="image-container">
+					<img class="product-image" src="./assets/image/product-21.jpg" alt="">
+					<div class="product-overlay">
+						<span class="fa fa-shopping-bag" data-toggle="tooltip" title="Mua ngay" data-placement="top"></span>
+						<span class="fa fa-eye" data-toggle="tooltip" data-placement="top" title="Xem"></span>
+					</div>
+				</div>
+				<span class="product-name">Sữa đặc Ngôi Sao Phương Nam xanh lá - Hộp giấy 380g</span>
+				<span class="product-price">18,000đ</span>
+			</div>
+		</div>
+		<div class="item">
+			<div class="product-item">
+				<div class="image-container">
+					<img class="product-image" src="./assets/image/product-22.jpg" alt="">
+					<div class="product-overlay">
+						<span class="fa fa-shopping-bag" data-toggle="tooltip" title="Mua ngay" data-placement="top"></span>
+						<span class="fa fa-eye" data-toggle="tooltip" data-placement="top" title="Xem"></span>
+					</div>
+				</div>
+				<span class="product-name">Sữa bột Dielac Alpha Gold IQ Step 4 - Hộp 400g</span>
+				<span class="product-price">105,000đ</span>
+			</div>
+		</div>
+		<div class="item">
+			<div class="product-item">
+				<div class="image-container">
+					<img class="product-image" src="./assets/image/product-23.jpg" alt="">
+					<div class="product-overlay">
+						<span class="fa fa-shopping-bag" data-toggle="tooltip" title="Mua ngay" data-placement="top"></span>
+						<span class="fa fa-eye" data-toggle="tooltip" data-placement="top" title="Xem"></span>
+					</div>
+				</div>
+				<span class="product-name">Sữa bột Dielac Alpha Gold IQ Step 4 - 900g</span>
+				<span class="product-price">356,000đ</span>
+			</div>
+		</div>
+		<div class="item">
+			<div class="product-item">
+				<div class="image-container">
+					<img class="product-image" src="./assets/image/product-24.jpg" alt="">
+					<div class="product-overlay">
+						<span class="fa fa-shopping-bag" data-toggle="tooltip" title="Mua ngay" data-placement="top"></span>
+						<span class="fa fa-eye" data-toggle="tooltip" data-placement="top" title="Xem"></span>
+					</div>
+				</div>
+				<span class="product-name">Nước dừa xiêm hương vị sen Cocoxim hộp 330ml</span>
+				<span class="product-price">13,500đ</span>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="container">
+	<section class="banner-3">
+	</section>
+</div>
+<div>
+	<div class="container my-5 news ">
+		<div class="news-title ">
+			<span>Tin tức</span>
+		</div>
+		<div class="owl-carousel owl-theme " >
+			<div class="item">
+				<div class="text-center card rounded-news">
+					<img src="./assets/image/news-1.jpg" alt="" class="card-img-top rounded-news">
+					<div class="card-body">
+						<h5 class="card-title">Bạch tuộc nướng và 5 cách chế biến thơm ngon để bạn đón mùa mưa về</h5>
+						<p class="card-text news-content">Trước khi cùng nhau chế biến, chúng ta cùng kiểm trai lại ngoài việc dễ hấp dẫn người thưởng thức về vị ngon, bạch tuộc liệu có tác dụng như thế nào cho sức khỏe không, để nếu có dùng "quá đà" một chút, thì cũng không làm chúng ta băn khoăn - phải không nhỉ.</p>
+						<a href="#" class="news-link">Xem thêm</a>
+					</div>
+				</div>
+			</div>
+			<div class="item">
+				<div class="text-center card rounded-news">
+					<img src="./assets/image/news-2.jpg" alt="" class="card-img-top rounded-news">
+					<div class="card-body">
+						<h5 class="card-title">Mực ống chiên giòn - cách làm ngon đúng chuẩn nhà hàng cực dễ</h5>
+						<p class="card-text news-content">Bữa ăn luôn ngon miệng với đĩa mực ống chiên giòn hấp dẫn
+						</p>
+						<a href="#" class="news-link">Xem thêm</a>
+					</div>
+				</div>
+			</div>
+			<div class="item">
+				<div class="text-center card rounded-news">
+					<img src="./assets/image/news-3.jpg" alt="" class="card-img-top rounded-news">
+					<div class="card-body">
+						<h5 class="card-title">3 món ngon với tôm nhất định nên có trong sổ tay nấu ăn của bạn</h5>
+						<p class="card-text news-content news-content">Món ngon với tôm khá phong phú, dù bạn không thích tôm đi chăng nữa, cũng có những món ăn vị hấp dẫn sẽ chinh phục được bạn. Không chỉ dừng lại ở hấp, kho, rang, rim; tôm còn có thể kết hợp với vô số nguyên liệu, làm cho thực đơn của bạn không hề nhàm chán. Để khởi đầu cho sự khám phá phong phú này, bạn có thể cập nhật ngay 3 món ngon với tôm như dưới đây, vào sổ tay nấu ăn của mình nhé.
+						</p>
+						<a href="#" class="news-link">Xem thêm</a>
+					</div>
+				</div>
+			</div>
+			<div class="item">
+				<div class="text-center card rounded-news">
+					<img src="./assets/image/news-4.jpg" alt="" class="card-img-top rounded-news">
+					<div class="card-body">
+						<h5 class="card-title">Top 4 các món ăn mùa hè ngon lạ miệng cực dễ làm</h5>
+						<p class="card-text news-content">Các món ăn mùa hè thường phải đạt tiêu chí là có yếu tố "tươi mát" và vẫn phải đảm bảo dinh dưỡng. Nhưng đôi khi tiêu chí tươi mát này cũng khiến chúng ta bối rối hoặc có chút "nhàm chán". Nếu bạn cũng đang băn khoăn như thế, hãy tham khảo ngay top 4 các món ăn mùa hè rất dễ chế biến, vừa quen vừa lạ miệng, để gia đình đổi vị như dưới đây.</p>
+						<a href="#" class="news-link">Xem thêm</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<section class="subscribe py-4 mx-3">
+	<div class="container ">
+		<div class="row">
+			<div class="col-md-6 d-flex align-items-center">
+				<span class="fa fa-envelope-o subscribe-icon mr-4"></span>
+				<div class="subscribe-content">
+					<h5 class="subscribe-title">ĐĂNG KÝ</h5>
+					<p class="subscribe-text">Hãy nhận ưu đãi hấp dẫn từ FreshNature nào!</p>
+				</div>
+			</div>
+			<div class="col-md-6">
+				<form  class="subscribe-form ">
+
+					<input type="email" class="subscribe-input" placeholder="Email" >
+					<button class="subscribe-submit">ĐĂNG KÝ</button>
+				</form>
+			</div>
+		</div>
+	</div>
+</section>
+<footer class="footer mt-5">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-3 col-sm-6 col-12">
+				<div class="footer-brand text-center">
+					<img src="./assets/image/favicon.png" alt="">
+					<p class="footer-brand-text">Fresh Nature bán lẻ thực phẩm tươi sống, bánh kẹo, đồ hộp, đồ dùng gia đình giá rẻ, sản phẩm tươi mới, nguồn gốc đảm bảo, dịch vụ chu đáo</p>
+				</div>
+			</div>
+			<div class="col-lg-3 col-sm-6 col-12">
+				<div class="footer-contact">
+					<span class="footer-title">
+						Liên hệ
+					</span>
+					<ul class="contact">
+						<li class="contact-item">
+							A12, Đinh Tiên Hoàng, Q. Hoàn Kiếm, Hà Nội
+						</li>
+						<li class="contact-item">
+							0123456789
+						</li>
+						<li class="contact-item">
+							contact@yourdomain.com
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-lg-3 col-sm-6 col-12">
+				<div class="footer-info">
+					<span class="footer-title">
+						Thông tin
+					</span>
+					<ul class="info">
+						<li class="info-item">
+							Giới thiệu
+						</li>
+						<li class="info-item">
+							Thông tin vận chuyển
+						</li>
+						<li class="info-item">
+							Quy định và Điều khoản
+						</li>
+						<li class="info-item">
+							Chính sách bảo mật
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-lg-3 col-sm-6 col-12">
+				<span class="footer-title">
+					Facebook
+				</span>
+			</div>
+		</div>
+	</div>
+</footer>
+<span class="scroll-to-top fa fa-angle-up d-none">
+	
+</span>
+<script src="./assets/jquery.min.js"></script>
+<script src="./assets/bootstrap.bundle.min.js" ></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous"></script>
+
+<script src="./js/main.js" >
+
+</script>
+</body>
+</html>
